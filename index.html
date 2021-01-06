@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>隐蔽的试药人</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+  <!-- Font Awesome CSS-->
+  <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <!-- Custom icon font-->
+  <link rel="stylesheet" href="css/fontastic.css">
+  <!-- Google fonts - Open Sans-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+  <!-- Fancybox-->
+  <link rel="stylesheet" href="vendor/@fancyapps/fancybox/jquery.fancybox.min.css">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="css/custom.css">
+  <!-- Favicon-->
+  <link rel="shortcut icon" href="favicon.png">
+  <script src="js/charts.js"></script>
+  <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+<body>
+
+<header class="header">
+  <!-- Main Navbar-->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <!-- Navbar Brand -->
+      <div class="navbar-header d-flex align-items-center justify-content-between">
+        <!-- Navbar Brand --><a href="index.html" class="navbar-brand">试药人数据报告</a>
+      </div>
+      <!-- Navbar Menu -->
+    </div></nav>
+</header>
+<!-- Hero Section-->
+<section style="background-size: cover; background: url(img/pexels-thirdman-5921836.jpg) center center;" class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div  style="text-align: center">
+          <h1 style="font-size:108px">隐蔽的试药人</h1></div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Intro Section-->
+<section class="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8">
+        <h2 class="h3">导语</h2>
+        <p class="text-big"> 据不完全统计，全国大约有50万人长期从事试药行业，他们大多数是20-30岁的年轻人。
+          据2004年的资料显示，中国职业“试药人”基本上由学生、医护人员和社会无职业者组成，其中医护人员与学生是药物一期临床试验的主力军。
+          随着试药市场的不断发展，这一群体还在不断扩大。
+        </p>
+      </div>
+
+
+      <div class="post col-md-4">
+        <img src="img/pexels-pietro-jeng-360622.jpg" alt="..." class="img-fluid">
+
+      </div>
+    </div>
+  </div>
+</section>
+<section class="featured-posts no-padding-top no-padding-bottom">
+  <div class="container">
+    <!-- Post-->
+    <div class="container;row;col-lg-12">
+      <h2 style="text-align: center">试药行业现状</h2>
+      <hr>
+      <p style="font-size:large" align="center">我们爬取了微博账号@试药圈@2020年高薪试药人@高薪试药2020年6月至12月的10753条试药招募信息。<br>经过筛重和清洗后留下3058条有效数据，通过数据解读为你展现试药行业现状。</p>
+      <p>&nbsp</p>
+      <p>&nbsp</p>
+      <div>
+        <header class="post-header">
+          <h2 class="h4">庞大的临床药物试验需求</h2>
+        </header>
+        <p>&nbsp;</p>
+        <p style="font-size: large">根据国家药品监督管理局2013-2019年度药品监管统计年报，2013年至2016年新药、仿制药和进口药的临床试验审批数量不断上升，2016年由于政策放开，
+          临床试验申请较为容易，所以2016年临床试验审批数量暴风增长，而后回归至正常水平。
+
+        <p>&nbsp;</p>
+      </div>
+      <div class="image col-lg-12" id="myBarChart" style="width:110%;height:300px">
+      </div>
+    </div>
+      <p align="center" style="color: #a0a0a0;font-size:large">图一：临床试验审批数量
+          (数据来源：国家药品监督管理局2013-2019年度药品监管统计年报)</p>
+    <p>&nbsp;</p>
+    <div class="container;row;col-lg-12">
+      <div>
+        <header class="post-header">
+          <h2 class="h4">临床试验点分布</h2>
+        </header>
+        <p>&nbsp;</p>
+        <p style="font-size:large">通过提取三千余条数据临床试验点的相关信息我们发现发布招募信息的临床试验点主要分布在东南沿海地区，
+          招募信息数量排行前五的省份（直辖市/特别行政区/自治区）分别是北京、湖南、江苏、上海、广东。
+        </p><p>&nbsp;</p>
+      </div>
+    </div>
+
+
+  <div class="container">
+    <div class="row">
+          <script type='text/javascript' src='https://prod-apnortheast-a.online.tableau.com/javascripts/api/viz_v1.js'>
+          </script><div class='tableauPlaceholder' style='width: 1080px; height: 701px;'>
+          <object class='tableauViz' width='1050' height='701' style='display:none;'><param name='host_url' value='https%3A%2F%2Fprod-apnortheast-a.online.tableau.com%2F' />
+            <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;tkuaikuai' /><param name='name' value='4&#47;1' />
+            <param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /></object></div>
+<div class="container">
+          <p style="text-align: center;color: #a0a0a0">（鼠标移至地图即可查看该地区招募信息数量以及获批临床试验点数量）</p>
+    <p align="center" style="color: #a0a0a0;font-size:large">图二：临床试验点分布
+        (数据来源：微博爬取数据整理)</p>
+          <p>&nbsp;</p>
+
+</div></div></div>
+    <div class="container;row;col-lg-12">
+      <div>
+        <header class="post-header">
+          <h2 class="h4">招募信息地区分布</h2>
+        </header>
+        <p>&nbsp;</p>
+        <p style="font-size: large">
+          根据《药物临床试验质量管理规范》相关规定，临床试验机构必须具备一定的资质，必须拥有一定数量的研究者，必须设有专门的部门承担临床试验的管理工作，
+          且科室必须具备承担临床试验的能力、必须配有相应的设备等。通常情况下只有三甲医院和个别医院的某一科室具备临床试验点的资格。
+        </p>
+        <p>&nbsp;</p>
+        <p style="font-size: large">通过对比招募信息在各地区的分布情况与各地区临床试验点数量可以发现，招募信息数量与获批的临床试验点
+          数量大体上呈正相关关系。其中，广东省、四川省和山东省临床试验点数量相比起其他省份明显较多。</p>
+        <p>&nbsp;</p>
+        <div class="post col-md-12" id="myOarChart" style="width:100%;height:600px">
+        </div>
+
+        <p style="text-align:center"><span style="color:#a0a0a0;">
+                    （注：香港、澳门和台湾地区的临床试验点数据缺失，故显示为0。）
+                  </span></p>
+          <p align="center" style="color: #a0a0a0;font-size:large">图三：招募信息地区分布
+              (数据来源：国家药品监督管理局数据中心)</p>
+          <p>&nbsp;</p>
+
+      </div>
+
+    </div>
+
+
+
+    <div class="container;row;col-lg-12">
+      <div>
+        <header class="post-header">
+          <h2 class="h4">风险越大，价格越高</h2>
+        </header>
+        <p>&nbsp;</p>
+        <p style="font-size: large">
+          我们将药物按照不同科室的用药分成12类，将无法归类的药物归入其他，
+          通过对比不同功效的药物的试药报酬发现：内分泌科类药物最低报酬与最高报酬相差最大，最高报酬排行前三的分别是妇科和内分泌科（并列第一）、
+          风湿免疫科和肿瘤科，平均报酬排行前三的分别是眼科、骨科和风湿免疫科（由于排行第一的烧伤科类药物仅有一条数据，故剔除），按最低报酬升序排列前三分别是神经科、
+          血管外科和消炎药。</p>
+        <p>&nbsp;</p>
+        <p style="font-size: large">  试药报酬与试药风险和住院时长相关，试药风险越大报酬越高，一般已经上市的药物报酬会相对较低；而住院时长较长的项目也会通过提高报酬吸引试药人。</p>
+        <div class="align-content-center" id="myAarChart" style="width:100%;height:600px">
+        </div>
+          <p align="center" style="color: #a0a0a0;font-size:large">图四：试药报酬对比
+              (数据来源：微博爬取数据整理)</p>
+<p>&nbsp;</p>
+              <div class="container;row;col-lg-12">
+                <div>
+                  <header class="post-header">
+                    <h2 class="h4">同种药物不同地区价格对比</h2>
+                  </header>
+                  <p>&nbsp;</p>
+                  <p style="font-size: large">
+                    通过对比同种药物在不同城市的试药报酬，我们发现同种药物在不同城市存在报酬不同的情况，如浙江的新冠疫苗项目报酬为18000，而上海的项目则为30000。</p>
+                  </div>
+            </div>
+          </div>
+        </div>
+    <p>&nbsp;</p>
+            <script type='text/javascript' src='https://prod-apnortheast-a.online.tableau.com/javascripts/api/viz_v1.js'>
+            </script>
+    <div class='tableauPlaceholder' style='width: 1050px; height: 701px;'>
+            <object class='tableauViz' width='1050' height='701' style='display:none;'>
+              <param name='host_url' value='https%3A%2F%2Fprod-apnortheast-a.online.tableau.com%2F' />
+              <param name='embed_code_version' value='3' /> <param name='site_root' value='&#47;t&#47;tkuaikuai' />
+              <param name='name' value='2&#47;1' />
+              <param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='showAppBanner' value='false' /></object></div>
+
+            <p style="text-align: center"><span style="color: #a0a0a0;">（鼠标移至图表即可查看不同城市试药项目报酬的具体数值）</span></p>
+      <p align="center" style="color: #a0a0a0;font-size:large">图五：不同城市试药报酬
+          (数据来源：微博爬取数据整理)</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+            <p>&nbsp;</p>
+ <!-- Picture Section-->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 style="text-align: center">试药群体画像</h2>
+          <hr>
+          <p style="font-size: large" align="center">通过进一步的数据收集和深访<br>
+            我们接触到了更真实的试药人群体</p>
+        </div></div></div>
+
+    <div class="container;row;col-lg-12">
+      <div>
+        <table>
+          <tr>
+            <td><a href="img/storystone.jpg"><img src="img/stone1.jpg" width="500" alt="..."></a></td>
+            <td><a href="img/storytiger.jpg"><img src="img/tiger1.jpg" width="500"></a></td>
+          </tr>
+        </table>
+        </div>
+        <p style="text-align:center"><span style="color:#a0a0a0;">
+                    （点击图片查看详细故事）
+                  </span></p>
+        <p align="center" style="color: #a0a0a0;font-size:large">图六：试药人画像
+            (数据来源：记者深访整理)</p>
+        <p>&nbsp;</p>
+      <div class="container;row;col-lg-12">
+        <div>
+          <p style="font-size: large">根据所能获取的有限数据，我们对比了试药人日收入（试药人日收入=试药报酬/住院天数）与中国平均日收入
+            （中国平均日收入=2019年全国人均每日可支配收入）发现在这个公式计算下的试药人每日所得远远超过中国平均水平。
+
+          </p>
+        </div>
+
+                      <div class="post col-md-12" align="center">
+                        <img src="img/RMB.png" width="600" alt="..." class="img-fluid">
+                          <p align="center" style="color: #a0a0a0;font-size:large">图七：试药人日收入与中国人均日收入对比
+                              (数据来源：国家统计局2019年人均日收入 )</p>
+                          <p>&nbsp;</p>
+                      </div>
+                    </div>
+                  </div>
+                  <br>&nbsp;
+                  <p style="font-size: large" align="center">然而，事情真有这么简单吗？ </p>
+
+                  <p style="font-size: large">试药前的体检十分严格，能选上的概率极小。且目前试药需联网登记，至少三个月内不得进行第二次试药，
+                    试药人的“空窗期”特别长，用一句老话来形容就是“三月不开单，一单吃三月”。许多试药人踩着三个月的底线奔走在一个又一个城市，
+                    做了一个又一个项目，却还是十分窘迫，这个世界似乎没有给他们带来光明。
+                  </p>
+
+                  <p style="font-size: large" align="center">那么，这个行业究竟是如何运转的？</p>
+
+                  </p>
+                </div>
+
+<div align="center" class="container;row;col-lg-12">
+<section style="border: 0 none" >
+        <section style="width: fit-content;height: 600px;overflow-y: auto;box-sizing: border-box">
+                            <span data-role="width" style="display: inline-block;width: 65%">
+                              <img src="img/liucheng.jpg" style="display: block;margin: 0;width: 100%;height: 1000%" title="undefined" alt="undefined"
+                                   width="849" height="600" border="0" >
+
+                            </span>
+        </section>
+      </section>
+    <p align="center" style="color: #a0a0a0;font-size:large">图八：试药流程
+        (数据来源：记者深访整理)</p>
+    <p>&nbsp;</p>
+    </div>
+
+                <!-- Divider Section-->
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-12">
+                      <h2 style="text-align: center">法规与伦理</h2>
+                      <hr>
+                      <p style="font-size: large" align="center">对于药物临床试验，国家有着相当完善的法律法规<br>
+                        但是社会对于试药普遍不太了解</p>
+
+                      <table>
+                        <tr>
+                          <td><a href="img/yanjiu.jpg"><img src="img/yanjiuxiaoren.jpg" width="330" alt="..."></a></td>
+                          <td><a href="img/lunli.jpg"><img src="img/lunlixiaoren.jpg" width="330"></a>
+                          <td><a href="img/shenban.jpg"><img src="img/shenbanzhe.jpg" width="330"></a></td>
+                        </tr>
+                      </table>
+                      <p align="center"><span style="font-size:large;color: #a0a0a0">（点击图片查看相关法律法规）</span> </p>
+                        <p align="center" style="color: #a0a0a0;font-size:large">图九：试药相关法律法规
+                            (数据来源：药物临床试验管理规范)</p>
+                        <p>&nbsp;</p>
+                      <div class="container;row;col-lg-12">
+                          <p style="font-size: large">
+                            2020年初，一场肺炎横扫全球，导致无数的悲剧。在这场天灾中，无数的人挺身而出，
+                            有医生护士，有领导官员，有建筑工人，有普通民众……还有一群人，他们被称为新冠疫苗志愿者，
+                            也正是这群人，让试药人这个群体被更多人注意到。
+                          </p>
+                      </div>
+
+                      <div class="post col-md-12" align="center">
+                            <iframe src="https://hanabi.data-viz.cn/chart.html?id=s_ceeb97313cd74c13b8ed4ae19adb7868&isIframe=1"
+                                    frameborder="0" width="100%" height="576px">
+                            </iframe>
+
+                          </div>
+                        </div>
+                      </div>
+
+
+                    <p align="center" style="color: #a0a0a0;font-size:large">图十：知乎评价情感分析
+                        (数据来源：知乎评论爬取数据)</p>
+                    <p>&nbsp;</p>
+                      </p>
+                      <p>&nbsp;
+
+                      </p>
+                      <p style="font-size: large">
+                        我们爬取了知乎上1465条关于“如何看待试药”和“如何看待新冠试药”的有效评论，其中与“如何看待试药”相关的评论共有518条，
+                        与“如何看待新冠试药”相关的评论共有947条。
+                        我们对这些评论做了情感分析后发现当人们评价“试药”时，有27.99%的评论呈现出强烈的积极态度，有20.27%呈现强烈的消极态度。
+                        而当“试药”与“新冠”挂钩时，明显呈现积
+                        极态度的评价达到了38.01%，强烈消极态度的评价降低到15.73%。总体来看，人们普遍对新冠试药人较为宽容。</p>
+                    </div>
+                    </p>
+                  </div>
+  <div class="container;row;col-lg-12">
+                  <table align="center">
+                    <tr>
+                      <td><img src="img/xinguanshiyao.jpg" width="500" alt="..."></td>
+                      <td><img src="img/shiyaopingjia.jpg" width="500"></td>
+                    </tr>
+                  </table>
+      <p align="center" style="color: #a0a0a0;font-size:large">图十一：知乎评价评论词云
+          (数据来源：知乎评论爬取数据)</p>
+      <p>&nbsp;</p>
+  </div>
+<!-- Divider1 Section-->
+                  <section class="intro">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-lg-12">
+                          <h2 class="h3">结语</h2>
+                          <p style="font-size: large">十年前，中国已有50万试药人，而如今这个数字究竟是多少还未可知。他们将试药作为“兼职”，游走在城市边缘，维持着自己的体面。
+                            《药物临床试验质量管理规范》第三章中对于伦理委员会成员有这样一项规定：“……伦理委员会应当审查是否存在受试者被强迫、利诱等不正当的影响而参加临床试验。……”而事实上，除了医学生等少量志愿者，大多数试药人都是为钱而来。
+                            他们是谁？他们在哪？他们吞下了什么？他们又注射了什么？这些都无人问津，他们就像游走在一个个城市的透明人。
+                          </p>
+                        </div>
+
+
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                  <!-- Page Footer-->
+                  <footer class="main-footer">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="logo">
+                            <h6>小组成员及分工</h6>
+                          </div>
+                          <div class="contact-details">
+                            <p>数据挖掘与清洗/黄诗淇 田沁元 王冀东<br>
+                              数据分析及可视化/ 黄诗淇 田沁元 王冀东<br>
+                              网页制作/田沁元/黄诗淇 王冀东<br>
+                              采访&撰文/ 黄诗淇/王冀东 田沁元
+                              <a href="#"></a></p>
+                            <ul class="social-menu">
+                              <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                              <li class="list-inline-item"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                              <li class="list-inline-item"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                              <li class="list-inline-item"><a href="#"><i class="fa fa-behance"></i></a></li>
+                              <li class="list-inline-item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="menus d-flex">
+
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                    <div class="copyrights">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <p>Copyright &copy; 2020.Company name All rights reserved.</p>
+                          </div>
+                          <div class="col-md-6 text-right">
+
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </footer>
+                  <!-- JavaScript files-->
+                  <script src="vendor/jquery/jquery.min.js"></script>
+                  <script src="vendor/popper.js/umd/popper.min.js"> </script>
+                  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+                  <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+                  <script src="vendor/@fancyapps/fancybox/jquery.fancybox.min.js"></script>
+                  <script src="js/front.js"></script>
+                  <script src="js/echarts.min.js"></script>
+                  <script src="chaets.js"></script>
+                  <script src="chart.js"></script>
+                  <script src="charts1.js"></script>
+                  <script src="charts2.js"></script>
+                  <script src="chat.js"></script>
+
+</div></div></section></body>
+</html>
