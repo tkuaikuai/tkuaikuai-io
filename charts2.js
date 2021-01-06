@@ -2,13 +2,14 @@ var myChart=echarts.init(document.getElementById("myAarChart"));
 var option = {
     "color": ["#00EAFF", "#00EAFF", "#00EAFF", "#00EAFF", "#fedd76"],
     "title": {
-        "text": "药物功效与报酬"
     },
+    backgroundColor:'#fff',
+
     "tooltip": {
         "trigger": "axis"
     },
     "grid": {
-        "right": "30%",
+        "right": "10%",
         "containLabel": true
     },
     "yAxis": [{
@@ -17,7 +18,7 @@ var option = {
             "show": true
         },
         "splitArea": {
-            "color": "#111",
+            "color": "#fff",
             "lineStyle": {
                 "color": "#111"
             }
@@ -107,7 +108,7 @@ var option = {
             "opacity": 0
         },
         "itemStyle": {
-            "color": "#fedd72",
+            "color": "#ff5737",
             "borderColor": "#fff",
             "borderWidth": 1,
             "shadowColor": "rgba(0, 0, 0, .3)"
@@ -159,6 +160,7 @@ var option = {
         }
     }]
 }
+
 
 myChart.setOption(option);
 

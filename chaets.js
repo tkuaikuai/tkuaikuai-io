@@ -2,13 +2,17 @@ var myChart=echarts.init(document.getElementById("myBarChart"));
 
 var option = {
     title: {
-        text: '折线图堆叠'
+        text: '临床试验审批数量'
     },
     tooltip: {
-        trigger: 'axis'
+        trigger: 'axis',
+        fontSize:'50',
     },
     legend: {
-        data: ['新药审批', '仿制药', '进口药']
+        data: ['新药', '仿制药', '进口药'],
+        textStyle:{
+            fontSize:13,
+        },
     },
     grid: {
         left: '3%',
@@ -24,31 +28,41 @@ var option = {
     xAxis: {
         type: 'category',
         boundaryGap: false,
-        data: ['2013', '2014', '2015', '2016', '2017', '2018', '2019']
+        data: ['2013', '2014', '2015', '2016', '2017', '2018', '2019'],
+        axisLabel:{
+            textStyle:{
+                fontSize:15,
+            }
+        }
     },
     yAxis: {
-        type: 'value'
+        type: 'value',
+        axisLabel:{
+            textStyle:{
+                fontSize:15,
+            }
+        }
     },
     series: [
         {
-            name: '新药审批',
+            name: '新药',
             type: 'line',
             stack: '总量',
-            color:'#40A4C3',
+            color:'#0e578c',
             data: [148, 344, 606, 4011, 734, 312, 577]
         },
         {
             name: '仿制药',
             type: 'line',
             stack: '总量',
-            color:'#FFCE00',
+            color:'#3f84c7',
             data: [92, 81, 404, 2949, 251, 58, 107]
         },
         {
             name: '进口药',
             type: 'line',
             stack: '总量',
-            color:'#FE0000',
+            color:'#9dc3f0',
             data: [251, 216, 348, 513, 316, 154, 494]
         },
 
